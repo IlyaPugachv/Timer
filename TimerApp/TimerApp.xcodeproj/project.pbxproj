@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC683AF72B2C432F00F553FB /* TimerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683AF62B2C432F00F553FB /* TimerAppApp.swift */; };
-		BC683AF92B2C432F00F553FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683AF82B2C432F00F553FB /* ContentView.swift */; };
+		BC683AF72B2C432F00F553FB /* TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683AF62B2C432F00F553FB /* TimerApp.swift */; };
 		BC683AFB2B2C433100F553FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC683AFA2B2C433100F553FB /* Assets.xcassets */; };
 		BC683AFE2B2C433100F553FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC683AFD2B2C433100F553FB /* Preview Assets.xcassets */; };
 		BC683B082B2C433200F553FB /* TimerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B072B2C433200F553FB /* TimerAppTests.swift */; };
 		BC683B122B2C433200F553FB /* TimerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B112B2C433200F553FB /* TimerAppUITests.swift */; };
 		BC683B142B2C433200F553FB /* TimerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B132B2C433200F553FB /* TimerAppUITestsLaunchTests.swift */; };
+		BC683B242B2C45DE00F553FB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B232B2C45DE00F553FB /* RegisterView.swift */; };
+		BC683B262B2C460500F553FB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B252B2C460500F553FB /* TimerView.swift */; };
+		BC683B282B2C462400F553FB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B272B2C462400F553FB /* UserManager.swift */; };
+		BC683B2A2B2C464000F553FB /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B292B2C464000F553FB /* TimeCounter.swift */; };
+		BC683B2D2B2C46AD00F553FB /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC683B2C2B2C46AD00F553FB /* StarterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +39,7 @@
 
 /* Begin PBXFileReference section */
 		BC683AF32B2C432F00F553FB /* TimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC683AF62B2C432F00F553FB /* TimerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAppApp.swift; sourceTree = "<group>"; };
-		BC683AF82B2C432F00F553FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC683AF62B2C432F00F553FB /* TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApp.swift; sourceTree = "<group>"; };
 		BC683AFA2B2C433100F553FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC683AFD2B2C433100F553FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC683B032B2C433200F553FB /* TimerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		BC683B0D2B2C433200F553FB /* TimerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC683B112B2C433200F553FB /* TimerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAppUITests.swift; sourceTree = "<group>"; };
 		BC683B132B2C433200F553FB /* TimerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC683B232B2C45DE00F553FB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BC683B252B2C460500F553FB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		BC683B272B2C462400F553FB /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		BC683B292B2C464000F553FB /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		BC683B2C2B2C46AD00F553FB /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		BC683AF52B2C432F00F553FB /* TimerApp */ = {
 			isa = PBXGroup;
 			children = (
-				BC683AF62B2C432F00F553FB /* TimerAppApp.swift */,
-				BC683AF82B2C432F00F553FB /* ContentView.swift */,
+				BC683B212B2C44F600F553FB /* App */,
+				BC683B202B2C44EB00F553FB /* Views */,
+				BC683B222B2C450300F553FB /* ObservableObject */,
 				BC683AFA2B2C433100F553FB /* Assets.xcassets */,
 				BC683AFC2B2C433100F553FB /* Preview Content */,
 			);
@@ -125,6 +134,33 @@
 				BC683B132B2C433200F553FB /* TimerAppUITestsLaunchTests.swift */,
 			);
 			path = TimerAppUITests;
+			sourceTree = "<group>";
+		};
+		BC683B202B2C44EB00F553FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC683B232B2C45DE00F553FB /* RegisterView.swift */,
+				BC683B252B2C460500F553FB /* TimerView.swift */,
+				BC683B2C2B2C46AD00F553FB /* StarterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC683B212B2C44F600F553FB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BC683AF62B2C432F00F553FB /* TimerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BC683B222B2C450300F553FB /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				BC683B272B2C462400F553FB /* UserManager.swift */,
+				BC683B292B2C464000F553FB /* TimeCounter.swift */,
+			);
+			path = ObservableObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC683AF92B2C432F00F553FB /* ContentView.swift in Sources */,
-				BC683AF72B2C432F00F553FB /* TimerAppApp.swift in Sources */,
+				BC683B262B2C460500F553FB /* TimerView.swift in Sources */,
+				BC683AF72B2C432F00F553FB /* TimerApp.swift in Sources */,
+				BC683B2D2B2C46AD00F553FB /* StarterView.swift in Sources */,
+				BC683B282B2C462400F553FB /* UserManager.swift in Sources */,
+				BC683B2A2B2C464000F553FB /* TimeCounter.swift in Sources */,
+				BC683B242B2C45DE00F553FB /* RegisterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +470,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +500,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
