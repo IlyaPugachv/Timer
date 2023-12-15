@@ -3,7 +3,6 @@ import SwiftUI
 struct TimerView: View {
     
     @EnvironmentObject var user: UserManager
-    
     @StateObject private var timer = TimeCounter()
     
     var body: some View {
@@ -17,19 +16,22 @@ struct TimerView: View {
             Spacer()
             
             ButtonViewStart()
-                .offset(x: 0, y: -400)
-                .environmentObject(timer)
-            
-            ButtonLogOut()
                 .offset(x: 0, y: -50)
                 .environmentObject(timer)
+            
+            Spacer()
+            
+            LogoutButton {
+                
+            }
         }
+        .padding()
     }
 }
 
 struct ButtonViewStart: View {
     @EnvironmentObject var timer: TimeCounter
-
+    
     var body: some View {
         Button(action: { timer.startTimer() }) {
             Text("\(timer.buttonTitle)")
@@ -47,23 +49,25 @@ struct ButtonViewStart: View {
     }
 }
 
-struct ButtonLogOut: View {
-    @EnvironmentObject var timer: TimeCounter
-
+struct LogoutButton: View {
+    var action: () -> Void
+    
     var body: some View {
-        Button(action: { timer.startTimer() }) {
-            Text("\(timer.buttonTitle)")
+        Button(action: {
+            action()
+        }) {
+            Text("Log Out")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
+                .frame(width: 200, height: 60)
+                .background(Color.yellow)
+                .cornerRadius(20)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(Color.black, lineWidth: 4)
+                )
         }
-        .frame(width: 200, height: 60)
-        .background(Color.red)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.black, lineWidth: 4)
-        )
     }
 }
 
